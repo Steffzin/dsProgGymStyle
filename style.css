@@ -1,0 +1,569 @@
+body{
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: #FFFFFF;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+
+nav ul {
+    padding: 20px;
+    gap: 20px;
+    list-style: none;
+    display: flex; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #858585;
+    
+}
+
+nav ul li #tela{
+    text-decoration: none;
+    color: #a52a2a;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar i {
+    color: #a52a2a;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 50%;
+    padding: 10%;
+}
+
+.product-info h2 {
+    color: #a52a2a;
+    font-size: 100px;
+    margin-bottom: 10px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: bold;
+}
+
+.product-info h3 {
+    color: #ff8c00;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.product-info p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-info button {
+    background-color: #a52a2a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+main {
+    height: 2000px;
+}
+
+.box-content {
+    padding: auto;
+    margin: 40px auto; /* Centraliza o contêiner */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    background-color: black;
+    width: 70%; /* Define a largura para 70% */
+}
+
+.box-content h2 {
+    margin-left: 30px;
+    color: #a52a2a;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 30px;
+}
+
+.product-container {
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 20px auto; /* Centraliza o contêiner */
+    width: 70%; /* Define a largura para 70% */
+}
+
+.product {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+.product p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.buy-button {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    left: 75%;
+    transform: translateX(-50%);
+    background-color: #a52a2a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;    
+}
+
+.product:hover .buy-button {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+.bi bi-caret-left-fill {
+    background-color: #a52a2a;
+    color: #a52a2a;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.bi bi-caret-right-fill {
+    background-color: #a52a2a;
+    color: #a52a2a;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #a52a2a;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.pre-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.pre-footer .search-bar {
+    margin-right: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 0 25px 25px 0;
+}
+
+.search-bar button i {
+    color: #a52a2a;
+    font-size: 20px;
+}
+
+
+
+/*=========== CSS - LOGIN ===========*/
+
+.login-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-container p {
+    text-align: center;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    color: #a52a2a;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#F1F1F1;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-footer a {
+    color: #a52a2a;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.btn-custom-danger {
+    background-color: #a52a2a;
+    border-color: #a52a2a;
+    color: #fff;
+}
+
+.btn-custom-danger:hover {
+    background-color: #8b0000;
+    border-color: #8b0000;
+}
+
+.alternative-login {
+    margin-top: 20px;
+}
+
+.alternative-login p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.alternative-login button {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternative-login button i {
+    margin-right: 10px;
+}
+
+/*=========== CSS - PRODUTO ===========*/
+
+.breadcrumb {
+    margin: 40px ;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #a52a2a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.breadcrumb span {
+    color: #333;
+    font-size: 14px;
+}
+
+.product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #FAFAFA;
+    
+}
+
+.product-image img {
+    margin-left: 100px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 50%;
+    padding: 10%;
+}
+
+.product-info .discount {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.product-info h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: bold;
+}
+
+.product-info .old-price {
+    color: #999;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.product-info .new-price {
+    color: #a52a2a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.product-tabs-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    width: 80%;
+    
+}
+
+.product-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 0 5px;
+    color: #666;
+}
+
+.tab-button.active {
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+.tab-content {
+    margin-left: 90px;
+}
+
+
+/*=========== CSS - PRODUTO ===========*/
