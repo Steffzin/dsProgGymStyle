@@ -566,4 +566,156 @@ footer {
 }
 
 
-/*=========== CSS - PRODUTO ===========*/
+/*=========== CSS - PAGAMENTO ===========*/
+.pagamento-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 1% auto; /* Centraliza a navbar */
+
+
+}
+
+.pagamento-navbar .logo img {
+    height: 50px;
+}
+
+.pagamento-navbar .user-info .icons {
+    display: flex;
+    gap: 20px; /* Define o gap entre os ícones */
+    margin-right: 40px;
+}
+
+.pagamento-navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Define o gap geral */
+    cursor: pointer;
+}
+
+.title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-size: 31px;
+    gap: 20px;
+    text-decoration: none;
+
+}
+
+.title-container a{
+    color: #333;
+    text-decoration: none;
+}
+
+.pagamento-navbar .user-info i {
+    font-size: 20px;
+    color: #a52a2a;
+    font-weight: 900px;
+    cursor: pointer;
+}
+
+.pagamento-navbar .user-info span {
+    font-size: 16px;
+    color: #971d1d;
+}
+
+.pagamento-navbar .user-info .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form {
+    flex: 2;
+}
+
+.payment-form h2 {
+    font-size: 18px;
+    color: #a52a2a;
+    margin-bottom: 10px;
+}
+
+.payment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.payment-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a52a2a;
+}
+
+.payment-form .form-group input,
+.payment-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.payment-form .form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.order-summary {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+    font-size: 18px;
+    color: #a52a2a;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+select.form-control {
+    width: 200px;
+}
+
+.order-summary .summary-item.total {
+    font-weight: bold;
+}
+
+.order-summary .btn-block {
+    width: 100%;
+    padding: 10px;
+    background-color: #a52a2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-summary .btn-block:hover {
+    background-color: #8b0000;
+}
