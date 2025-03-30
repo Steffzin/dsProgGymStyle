@@ -106,3 +106,25 @@
 .btn-social:hover {
     background-color: #f9f9f9;
 }
+
+.alternative-login {
+    margin-top: 20px;
+}
+
+.alternative-login p {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.alternative-login button {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternative-login button i {
+    margin-right: 10px;
+}
