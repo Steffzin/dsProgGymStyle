@@ -6,12 +6,12 @@
 .breadcrumb a {
     color: #a52a2a;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .breadcrumb span {
     color: #333;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .product-detail {
@@ -64,7 +64,7 @@
 
 .product-info .new-price {
     color: #a52a2a;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -109,5 +109,7 @@
 }
 
 .tab-content {
-    margin-left: 90px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
 }
