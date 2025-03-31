@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 }
 
-label {
+.title-cadastro {
     color: red; /* Define a cor do texto do label como vermelho */
     font-weight: bold; /* (Opcional) Deixa o texto em negrito */
 }
