@@ -27,7 +27,7 @@
                     <i class="bi bi-cart"></i>
                 </div>
                 <img src="../img/icon-user.png" alt="User Avatar" class="user-avatar">
-                <span>Olá, <strong>Otávio</strong></span>
+                <span>Olá, <strong></strong></span>
                 
             </div>
         </div>
@@ -187,6 +187,31 @@
         }
     
         loadCart();
+
+        const username = localStorage.getItem('username');
+        const userInfoContainer = document.querySelector('.user-info');
+        
+        if (username) {
+            // Atualiza a navbar para exibir o nome do usuário
+            userInfoContainer.innerHTML = `
+                <div class="icons">
+                    <i class="bi bi-question-circle"></i>
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-cart"></i>
+                </div>
+                <img src="../img/icon-user.png" alt="User Avatar" class="user-avatar">
+                <span>Olá, <strong>${username}</strong></span>
+                <a href="#" onclick="logout()" class="logout-btn">Sair</a>
+            `;
+        }
+    
+        // Função de logout
+        function logout() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('userId');
+            alert('Você saiu com sucesso!');
+            window.location.href = '../index.html'; // Redireciona para a página inicial
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

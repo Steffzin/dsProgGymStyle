@@ -7,17 +7,28 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cadastro-container h1 {
+.cadastro-container h2 {
     font-size: 28px;
-    color: #333;
+    color: #be2828;
     text-align: center;
     margin-bottom: 20px;
+}
+
+label {
+    color: red; /* Define a cor do texto do label como vermelho */
+    font-weight: bold; /* (Opcional) Deixa o texto em negrito */
 }
 
 .cadastro-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #c02b2b;
+    margin-bottom: 5px;
 }
 
 .form-row {

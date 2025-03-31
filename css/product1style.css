@@ -1,12 +1,16 @@
 .breadcrumb {
     margin: 40px ;
     font-size: 14px;
+    gap: 3px;
+    margin-left: 10%;
+    font-size: 10px;
 }
 
 .breadcrumb a {
     color: #a52a2a;
     text-decoration: none;
     font-size: 18px;
+    
 }
 
 .breadcrumb span {
