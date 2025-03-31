@@ -382,3 +382,7 @@ footer {
     font-size: 20px;
 }
 
+.bi bi-cart{
+    text-decoration: none;
+    color: #a52a2a;
+}

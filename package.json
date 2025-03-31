@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/Steffzin/dsProgGymStyle/issues"
   },
-  "homepage": "https://github.com/Steffzin/dsProgGymStyle#readme"
+  "homepage": "https://github.com/Steffzin/dsProgGymStyle#readme",
+  "devDependencies": {}
 }

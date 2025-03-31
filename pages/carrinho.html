@@ -17,7 +17,7 @@
     <header>
         <div class="pagamento-navbar">
             <div class="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <img src="../img/logo.png" alt="GymStyle">
             </div>
             <div class="log">
                 <div class="user-info">
@@ -42,11 +42,48 @@
 
 
                 <div class="cart-item">
-                    
+                    <input type="checkbox" class="item-checkbox">
+                    <img src="../img/creator.png" alt="CREATOR - CREATINA MONOHIDRATADA - 500G">
+                    <div class="item-details">
+                        <h3>CREATOR - CREATINA MONOHIDRATADA - 500G</h3>
+                        <span class="discount">Disc 50%</span>
+                        <p class="price">R$ --,--</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
                 </div>
-                
-
-
+                <div class="cart-item">
+                    <input type="checkbox" class="item-checkbox">
+                    <img src="../img/vantela.png" alt="Vantela Oldschool Strip sock">
+                    <div class="item-details">
+                        <h3>Vantela Oldschool Strip sock</h3>
+                        <p class="price">R$ --,--</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                </div>
+                <div class="cart-item">
+                    <input type="checkbox" class="item-checkbox">
+                    <img src="../img/cinturao.png" alt="Cinturão Branco Growth - GROWTH">
+                    <div class="item-details">
+                        <h3>Cinturão Branco Growth - GROWTH</h3>
+                        <p class="price">R$ 114,90</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                </div>
             </div>
             
             <div class="order-summary">
