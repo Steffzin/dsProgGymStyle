@@ -168,3 +168,27 @@
     display: flex;
     gap: 10px;
 }
+
+.log {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: #a52a2a;
+}
+
+.log .icons {
+    display: flex;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+.log .icons a i {
+    color: #a52a2a; 
+    font-size: 20px; 
+    transition: color 0.3s ease;
+}
+
+.log .icons a i:hover {
+    color: darkred;
+}

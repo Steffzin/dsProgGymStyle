@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.getElementById('carousel');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
+    const addToCartButton = document.getElementById('add-to-cart');
+
 
     prevButton.addEventListener('click', function() {
         carousel.scrollBy({
@@ -16,6 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+
+    if (addToCartButton) {
+        addToCartButton.addEventListener('click', function() {
+            const product = {
+                name: this.getAttribute('data-name'),
+                price: this.getAttribute('data-price'),
+                image: this.getAttribute('data-image')
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+        });
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -1,23 +1,22 @@
+
+
 .cadastro-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .cadastro-container h2 {
     font-size: 28px;
-    color: #be2828;
-    text-align: center;
+    color: #333;
+    text-align: left;
     margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
-label {
-    color: red; /* Define a cor do texto do label como vermelho */
-    font-weight: bold; /* (Opcional) Deixa o texto em negrito */
-}
 
 .cadastro-form {
     display: flex;
@@ -25,11 +24,7 @@ label {
     gap: 20px;
 }
 
-.form-group label {
-    font-size: 14px;
-    color: #c02b2b;
-    margin-bottom: 5px;
-}
+
 
 .form-row {
     display: flex;
@@ -44,7 +39,7 @@ label {
 
 .form-group label {
     font-size: 14px;
-    color: #333;
+    color: #a52a2a;
     margin-bottom: 5px;
 }
 

@@ -16,7 +16,7 @@
     <header>
         <div class="pagamento-navbar">
             <div class="logo">
-                <img src="../img/logo.png" alt="GymStyle">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
             </div>
 
             <div class="user-info">
@@ -25,8 +25,6 @@
                     <i class="bi bi-heart"></i>
                     <i class="bi bi-cart"></i>
                 </div>
-                <img src="../img/icon-user.png" alt="User Avatar" class="user-avatar">
-                <span>Olá, <strong>Otávio</strong></span>
                 
             </div>
         </div>
@@ -98,7 +96,7 @@
                     <span>Total :</span>
                     <span>R$ --,--</span>
                 </div>
-                <button class="btn btn-custom-danger btn-block">Finalizar</button>
+                <button class="btn btn-custom-danger btn-block" >Finalizar</button>
             </div>
         </div>
 
@@ -154,6 +152,31 @@
     </footer>
 
     <script src="../script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const subtotalElement = document.querySelector('.summary-item span:nth-child(2)');
+            const totalElement = document.querySelector('.summary-item.total span:nth-child(2)');
+
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            if (cart.length === 0) {
+                subtotalElement.textContent = 'R$ 0,00';
+                totalElement.textContent = 'R$ 0,00';
+                return;
+            }
+        
+            let subtotal = 0;
+        
+            cart.forEach(product => {
+                subtotal += product.price * product.quantity;
+            });
+        
+           
+            subtotalElement.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            totalElement.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
